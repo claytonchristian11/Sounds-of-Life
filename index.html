@@ -9,6 +9,18 @@
   <body>
 
     <div>
+      <h2>Welcome to Sounds of Life</h2>
+      <div>
+        <a href="https://github.com/claytonchristian11/Sounds-of-Life">
+          <img src="https://png.pngtree.com/svg/20170916/github_600969.png">
+        </a>
+        <a href="https://www.linkedin.com/in/clayton-christian/">
+          <img src="http://jasonrowinski.com/wp-content/uploads/2016/06/Linkedin-Icon.png">
+        </a>
+      </div>
+    </div>
+
+    <div>
       <button class="button" onclick="playGame()">Play</button>
       <button class="button" onclick="pauseGame()">Pause</button>
       <button class="button" onClick="clearGrid()">Clear Grid</button>
@@ -19,9 +31,19 @@
       <input type="range" min="50" max="1000" value="300" class="slider" id="slider">
     </div>
 
-
-
+    <div id="grid-div"></div>
     <script type="text/javascript" src="lib/game.js"> </script>
 
+
   </body>
+  <footer>
+    <div>
+      <h3>Thanks for checking out the site. Based on
+        <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">conway's game of life</a>.
+        Implemented with vanilla Javascript and
+        <a href="https://tonejs.github.io/">Tone.js</a>
+
+      </h3>
+    </div>
+  </footer>
 </html>
