@@ -8,10 +8,19 @@
   </head>
   <body>
 
-    <button onclick="playGame()">Play</button>
-    <button onclick="pauseGame()">Pause</button>
+    <div>
+      <button class="button" onclick="playGame()">Play</button>
+      <button class="button" onclick="pauseGame()">Pause</button>
+      <button class="button" onClick="clearGrid()">Clear Grid</button>
+      <button class="button" onClick="preset1()">Preset 1</button>
+      <button class="button" onClick="preset2()">Preset 2</button>
+      <button class="button" onClick="preset3()">Preset 3</button>
+      <h3>Speed</h3>
+      <input type="range" min="50" max="1000" value="300" class="slider" id="slider">
+    </div>
 
-    <script type="text/javascript" src="lib/grid.js"> </script>
+
+
     <script type="text/javascript" src="lib/game.js"> </script>
 
   </body>

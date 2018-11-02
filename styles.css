@@ -2,13 +2,64 @@
 .grid td {
     cursor:pointer;
     width:30px; height:30px;
-    border:1px solid #ccc;
+    border:5px solid #000000;
 }
 
 .grid td[alive="true"] {
-  background-color: black;
+  background-image: radial-gradient(#3EA055, #5FFB17);
 }
 
 .grid td[alive="false"] {
-  background-color: white;
+  background-color: #303030;
+}
+
+body {
+  background-color: #000000;
+}
+
+body div {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #404040;
+  margin: 10px 9px 0 9px;
+  border-radius: 4px;
+  height: 30px;
+  width: 80px;
+  font-family: sans-serif;
+  font-size: 13px;
+  border: 2px solid #404040;
+  color: #e6e6e6;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+  outline-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+}
+
+body h3 {
+  margin-right: 10px;
+  margin-left: 5px;
+  font-size: 16px;
+  color: #e6e6e6;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
+    color: #5FFB17;
+}
+
+.slider::-moz-range-thumb {
+    cursor: pointer;
+    color: #5FFB17;
 }
