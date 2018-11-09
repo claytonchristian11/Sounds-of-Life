@@ -18,31 +18,32 @@ Users will be able to:
 #### Technologies Utilized
  * Vanilla JavaScript for overall structure and game logic
  * Tone.js to provide multiple instruments, easily dictate tone and note length
- * HTML5 Canvas to render the grid and manipulate cells
- * Webpack to bundle all modules for usage in browser
 
-#### Implementation Timeline
-##### Monday
- - Familiarize self with canvas, get grid to render
- - Walk through logic of game of life, plan implementation
+#### Image of site 
+![alt text](https://preview.ibb.co/itOiYV/Screen-Shot-2018-11-07-at-10-01-58-PM.png)
 
-##### Tuesday
- - Work on implementation of game logic, aim for full pause/play functionality
- - Familiarize self with Tone.js
+#### Code Snippets
+Implemented volatile tick speed by abstracting game play logic from grid, allowing a slide bar to change how fast the game progresses.
+``` javascript
+// setting speed of game dynamically
+let slider = document.getElementById("slider");
+let tick = slider.value
 
-##### Wednesday
- - Add individual tones to each cell (utilizing scales for higher likelihood of sounding pleasant)
- - Work on tones playing only when the cell is alive
+slider.oninput = function() {
+   tick = slider.value;
+   pauseGame();
+   playGame();
+}
 
-##### Thursday
- - Work on color scheme/styling
- - Add slide bar to change speed of the game
-
-##### Friday
- - Finish up previous days' work
- - Add preset grids user is able to select
- - Debug, ensure ease of use, finish styling
-
-##### Weekend
- - Extra time to finish up any MVP not completed during week
- - Bonus features: Ability to change instruments,
+function playGame() {
+    if (currentlyPlaying === false){
+    currentlyPlaying = true;
+    
+    game = setInterval(function(){
+    
+      //game logic to update grid goes here
+    
+    }, tick)
+  }
+}
+```
