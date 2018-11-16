@@ -23,7 +23,7 @@ Users will be able to:
 ![alt text](https://preview.ibb.co/itOiYV/Screen-Shot-2018-11-07-at-10-01-58-PM.png)
 
 #### Code Snippets
-Implemented volatile tick speed by abstracting game play logic from grid, allowing a slide bar to change how fast the game progresses.
+Implemented volatile tick speed by abstracting game play logic from grid, allowing a slide bar to change how fast the game progresses. 
 ``` javascript
 // setting speed of game dynamically
 let slider = document.getElementById("slider");
